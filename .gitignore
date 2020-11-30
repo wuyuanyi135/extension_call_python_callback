@@ -1,0 +1,5 @@
+cmake-build-*
+python/build
+python/stubs
+python/dist
+python/*.egg-info
