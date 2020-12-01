@@ -10,4 +10,8 @@ if __name__ == '__main__':
     cls = extension_call_python_callback.ExtensionClass(callback)
     cls.start_background_thread()
     loop = asyncio.new_event_loop()
-    loop.run_forever()
+
+    try:
+        loop.run_forever()
+    except KeyboardInterrupt:
+        print("Finalizing in python")
